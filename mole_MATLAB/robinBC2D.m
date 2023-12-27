@@ -16,8 +16,8 @@ function BC = robinBC2D(k, m, dx, n, dy, a, b)
     Bn = robinBC(k, n, dy, a, b);
     
     Im = speye(m+2);
-    
     In = speye(n+2);
+    
     In(1, 1) = 0;
     In(end, end) = 0;
     
